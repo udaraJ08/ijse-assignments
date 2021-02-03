@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Position</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+
+    <style>
+        body>main>section{
+
+            width:100vw;
+            height: 100vh;
+            border: white;
+            position: relative;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        body>main>section:nth-child(1)>article:nth-child(1){
+
+            border: 56px solid mediumspringgreen;
+            z-index:7;
+            width: 411px;
+            position: fixed;
+            height: 411px;
+            margin: auto;
+            alignment: center;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-radius: 300px;
+            overflow: hidden;
+        }
+
+        #inside{
+            position: fixed;
+            z-index: 7;
+            border: rgba(204, 20, 255, 0.97) solid 28px;
+            border-radius: 395px;
+            margin: auto;
+            width: 395px;
+            height: 395px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        body>main>section:nth-child(1)>article>aside{
+
+            width: 288px;
+            height: 288px;
+            position: relative;
+            font-weight: bolder;
+            background-position: center;
+            border-radius: 288px;
+            padding-top: 58vh;
+            padding-top: 14vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        body>main>aside{
+
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 321px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            background: cyan;
+            width: 399px;
+            height: 61px;
+            border-radius: 288px;
+            top: 25vh;
+            right: -36vw;
+            left: 37vw;
+            bottom: 50vh;
+
+        }
+
+        body>main>section:nth-child(1)>article:nth-child(2) {
+            background-position: center;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding-top: 339px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background:  dodgerblue;
+            width: 398px;
+            height: 58px;
+            border-radius: 395px;
+            top: 0;
+            bottom: 0;
+        }
+
+        div{
+
+            font-size: 70px;
+            position: absolute;
+            text-align: center;
+            top: 66px;
+            font-family: "Bauhaus 93";
+        }
+
+        body>main>section:nth-child(1)>article:nth-child(2)>div{
+
+            font-size: 53px;
+            font-family: "Bauhaus 93";
+            color: white;
+            position: absolute;
+            text-align: center;
+            top: 62px;
+
+        }
+
+
+        body>main>section:nth-child(2)>article>div{
+
+            font-size: 53px;
+            font-family: "Bauhaus 93";
+            color: white;
+            position: absolute;
+            text-align: center;
+            top: 62px;
+
+        }
+
+        body>main>section:nth-child(3)>article>div{
+
+            font-size: 73px;
+            font-weight: bolder;
+            font-family: "Bauhaus 93";
+            color: white;
+            position: absolute;
+            text-align: center;
+            top: 57px;
+
+        }
+
+        body>main>section:nth-child(2)>div{
+
+            font-size: 70px;
+            position: absolute;
+            text-align: center;
+            top: 50px;
+
+        }
+
+        body>main>section:nth-child(2)>article{
+
+            background-position: center;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding-top: 339px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: #ff4783;
+            width: 398px;
+            height: 58px;
+            border-radius: 395px;
+            top: 0;
+            bottom: 0;
+        }
+
+        body>main>section:nth-child(3)>article{
+
+            background-position: center;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding-top: 339px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: #47ffee;
+            width: 398px;
+            height: 58px;
+            border-radius: 395px;
+            top: 0;
+            bottom: 0;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<header></header>
+<main>
+    <section>
+        <article>
+            <article id="inside"></article>
+        </article>
+        <article>
+            <div>
+                <h1>Hello</h1>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <div>
+                <h1>I am</h1>
+            </div>
+        </article>
+
+    </section>
+
+    <section>
+        <article>
+            <div>
+                <h5>InFeRnO.B</h5>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+
+</body>
+</html>
